@@ -1,7 +1,7 @@
 import requests
 
 """
-通过构建请求 去访问本地部署的qwen3:latest 模型
+通过构建请求 去访问本地部署的qwen3:latest 模型-单条信息
 """
 # 准备请求数据
 data = {

@@ -13,7 +13,9 @@ try:
         messages=[
             {'role': 'system', 'content': '你是一个乐于助人的AI助手。'},
             {'role': 'user', 'content': '请用Python写一个快速排序函数。'}
-        ]
+        ],
+        temperature=0.7,  # 【新增】控制创造性，值越高越有创意，越低越严谨
+        max_tokens=1000 # 【新增】限制单次回复的最大长度，防止“滔滔不绝”
     )
 
     # 3. 打印结果（适配 DashScope 官方返回格式）
